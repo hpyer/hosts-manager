@@ -1,0 +1,11 @@
+{
+    "name": "hosts-manager",
+    "version": "1.0.0",
+    "description": "本地hosts文件管理器",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\""
+    },
+    "author": "Hpyer(me@hpyer.cn)",
+    "license": "MIT License"
+}
