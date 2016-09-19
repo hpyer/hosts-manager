@@ -1,0 +1,28 @@
+
+// 基准字号
+$base-line: 12px !default;
+
+// 容器宽度
+$container-width: 1280px !default;
+
+// 字体目录
+$font-dir: "../fonts/" !default;
+
+// 默认字体
+$font-family: Helvetica, sans-serif !default;
+
+// 颜色
+$base-color         : rgb(187, 34, 153);
+$base-color-light   : lighten($base-color, 25%);
+$secondary          : rgb(219,216,121);
+$border-color       : lighten($secondary, 20);
+$black 	: rgb(0,0,0);
+$white 	: rgb(255,255,255);
+
+$text-color         : #333 !default;
+$text-color-strong  : $black;
+
+$link-color         : $base-color;
+$link-color-hover   : $link-color;
+$link-color-visited : $link-color;
+$link-color-focus   : $link-color;

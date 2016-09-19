@@ -1,11 +1,38 @@
 {
-    "name": "hosts-manager",
-    "version": "1.0.0",
-    "description": "本地hosts文件管理器",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\""
-    },
-    "author": "Hpyer(me@hpyer.cn)",
-    "license": "MIT License"
+  "name": "hosts-manager",
+  "description": "本地hosts文件管理器",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "author": "Hpyer(me@hpyer.cn)",
+  "license": "MIT License",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.17",
+    "body-parser": "~1.15.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "copy": "^0.3.0",
+    "debug": "~2.2.0",
+    "del": "^2.2.2",
+    "express": "~4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2",
+    "gulp-scss": "^1.4.0",
+    "i18n": "^0.8.3",
+    "jade": "~1.11.0",
+    "jquery": "^2.1.4",
+    "json-string": "0.0.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "gulp-babel": "^6.1.2",
+    "nodemon": "^1.10.2"
+  }
 }
