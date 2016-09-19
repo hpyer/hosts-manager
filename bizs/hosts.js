@@ -1,10 +1,5 @@
-var express = require('express');
-var router = express.Router();
-
-<<<<<<< HEAD
-var profiles = require('../data/profiles.json');
-var config = require('../config');
-var json = require('json-string');
+var fs = require("fs");
+var os = require("os");
 
 var hosts = {
     /**
@@ -12,12 +7,10 @@ var hosts = {
      * @return string
      */
     getFile: function() {
-        var os = require("os");
         var file = '/etc/hosts';
         if (os.type() == 'Windows_NT') {
             file = 'C:/Windows/System32/drivers/etc/hosts';
         }
-
         return file;
     },
 
@@ -26,7 +19,6 @@ var hosts = {
      * @return string 返回false表示读取失败
      */
     read: function() {
-        var fs = require("fs");
         var option = {
             flags : 'r',
             encoding : null/*,
@@ -46,7 +38,6 @@ var hosts = {
      * @return bool
      */
     write: function(content) {
-        var fs = require("fs");
         var option = {
             flags: 'a',
             /*encoding: null,
@@ -62,35 +53,4 @@ var hosts = {
 
 };
 
-var main = {
-    index: function(req, res, next) {
-        var data = {
-            title: config.name,
-            profiles: json(profiles)
-        };
-        res.render('index', data);
-    },
-
-    default: function(req, res, next) {
-    },
-
-    create: function(req, res, next) {
-    },
-
-    edit: function(req, res, next) {
-    },
-
-    del: function(req, res, next) {
-    }
-
-};
-
-router.get('/', main.index);
-=======
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express', test: 'test' });
-});
->>>>>>> cc8e914b13ebf17da00aefddc212a2e2f28d7e28
-
-module.exports = router;
+module.exports = hosts;

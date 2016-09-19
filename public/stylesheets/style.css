@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*!
  * Host-Manager SCSS file
  */
@@ -115,3 +116,13 @@ body {
     display: none; }
   .profiles .profile.selected .btn-group .selected {
     display: inline-block; }
+=======
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+>>>>>>> cc8e914b13ebf17da00aefddc212a2e2f28d7e28

@@ -4,9 +4,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+<<<<<<< HEAD
 var i18n = require("i18n");
 
 var routes = require('./routes/index');
+=======
+
+var routes = require('./routes/index');
+var users = require('./routes/users');
+>>>>>>> cc8e914b13ebf17da00aefddc212a2e2f28d7e28
 
 var app = express();
 
@@ -24,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 // i18n settings
 i18n.configure({
     locales: app.config.languages,
@@ -36,6 +43,10 @@ i18n.configure({
 app.use(i18n.init);
 
 app.use('/', routes);
+=======
+app.use('/', routes);
+app.use('/users', users);
+>>>>>>> cc8e914b13ebf17da00aefddc212a2e2f28d7e28
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

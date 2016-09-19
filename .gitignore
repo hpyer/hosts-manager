@@ -1,6 +1,9 @@
 .git
 node_modules
 *.log
+<<<<<<< HEAD
 .DS_Store
 .gulp-scss-cache
 .sass-cache
+=======
+>>>>>>> cc8e914b13ebf17da00aefddc212a2e2f28d7e28
