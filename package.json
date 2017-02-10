@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "本地hosts文件管理器",
   "scripts": {
-    "start": "node build/server",
-    "dev": "nodemon build/server"
+    "start": "node build/server"
   },
   "author": "Hpyer(me@hpyer.cn)",
   "license": "MIT License",
