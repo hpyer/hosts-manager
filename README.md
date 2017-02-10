@@ -1,6 +1,6 @@
 ## Hosts文件管理器
 
-前端基于 vue2.0 + element ui 开发，后端基于 node + express
+前端基于 vue2.0 + element ui 开发，后端基于 node + express，数据通信用 axios
 
 ### Features
 
