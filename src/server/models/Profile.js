@@ -45,13 +45,18 @@ const Profile = {
     return true
   },
 
+  getProfileContent: function (profile) {
+    let content = profile.content
+    return content
+  },
+
   active: function (id) {
     try {
       let content = ''
       this.profiles.map((profile, i) => {
         if (profile.id == id) {
           this.profiles[i].isChecked = true
-          content = profile.content
+          content = this.getProfileContent(profile)
         } else {
           this.profiles[i].isChecked = false
         }
@@ -84,6 +89,7 @@ const Profile = {
 
   update: function (id, data) {
     try {
+      let content = ''
       this.profiles.map((profile, i) => {
         if (profile.id == id) {
           for (var key in profile) {
@@ -92,9 +98,13 @@ const Profile = {
             }
           }
           this.profiles[i] = profile
+          if (profile.isChecked) {
+            content = this.getProfileContent(profile)
+          }
           return
         }
       })
+      if (content != '') Host.writeFile(content)
       this.save()
     } catch (e) {
       console.log('Profile.update():', e)
