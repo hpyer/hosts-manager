@@ -23,7 +23,7 @@
 # 安装开发所需的依赖关系
 npm install
 
-# 运行脚本（浏览器中打开 localhost:8181）
+# 运行脚本（浏览器中打开 localhost:8181，端口在 config/index.js 文件中修改）
 npm run start
 
 ```
