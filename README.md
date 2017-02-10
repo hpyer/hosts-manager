@@ -30,4 +30,4 @@ npm run start
 
 ### TODO
 
-[] 组合 hosts 文件
+[-] 组合 hosts 文件
