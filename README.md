@@ -6,8 +6,9 @@
 
 ### 功能
 
-* hosts 配置增删改查（CRUD）
-* hosts 配置一键切换
+- [x] hosts 配置增删改查（CRUD）
+- [x] hosts 配置一键切换
+- [ ] 组合 hosts 配置，即某个配置可以包含其他配置，以实现部分配置公用
 
 ### 知识点
 
@@ -29,7 +30,3 @@ npm install
 npm run start
 
 ```
-
-### TODO
-
-* [ ] 组合 hosts 配置，即某个配置可以包含其他配置，以实现部分配置公用
