@@ -10,16 +10,6 @@
 - [x] hosts 配置一键切换
 - [ ] 组合 hosts 配置，即某个配置可以包含其他配置，以实现部分配置公用
 
-### 知识点
-
-* vue2.0 (https://cn.vuejs.org/)
-* element-ui (http://element.eleme.io/)
-* express (http://www.expressjs.com.cn/)
-* node.js (http://nqdeng.github.io/7-days-nodejs/)
-* es6规范 (http://es6.ruanyifeng.com/)
-* sass (http://www.w3cplus.com/sassguide/)
-* webpack (https://segmentfault.com/a/1190000002551952)
-
 ### 运行项目
 
 ``` bash
@@ -30,3 +20,13 @@ npm install
 npm run start
 
 ```
+
+### 知识点
+
+* vue2.0 (https://cn.vuejs.org/)
+* element-ui (http://element.eleme.io/)
+* express (http://www.expressjs.com.cn/)
+* node.js (http://nqdeng.github.io/7-days-nodejs/)
+* es6规范 (http://es6.ruanyifeng.com/)
+* sass (http://www.w3cplus.com/sassguide/)
+* webpack (https://segmentfault.com/a/1190000002551952)
