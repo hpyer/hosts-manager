@@ -1,10 +1,12 @@
 ## Hosts文件管理器
 
-前端基于 vue2.0 + element ui 开发，后端基于 node + express，数据通信用 axios
+> 学习 node 下前端 + 后端开发的项目实例
+
+前端基于 vue2.0 + element ui + webpack，后端基于 node + express + 文件存储，数据通信用 axios
 
 ### Features
 
-* 多 hosts 文件管理
+* 多个 hosts 配置管理（CRUD）
 * hosts 配置一键切换
 
 ### 知识点
@@ -30,4 +32,4 @@ npm run start
 
 ### TODO
 
-[ ] 组合 hosts 文件
+* [ ] 组合 hosts 配置，即某个配置可以包含其他配置，以实现部分配置公用
