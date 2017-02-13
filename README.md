@@ -4,9 +4,9 @@
 
 前端基于 vue2.0 + element ui + webpack，后端基于 node + express + 文件存储，数据通信用 axios
 
-### Features
+### 功能
 
-* 多个 hosts 配置管理（CRUD）
+* hosts 配置增删改查（CRUD）
 * hosts 配置一键切换
 
 ### 知识点
